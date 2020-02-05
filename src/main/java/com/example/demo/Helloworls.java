@@ -8,15 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Helloworls {
 	
-	//using get method and hello-world as URI  
-		@RequestMapping(method = RequestMethod.GET, path = "/hello-world")
-		public String helloWorld() {
-			return "Hello World";
-		}
 
 
-	@RequestMapping(value = "/plus", method = RequestMethod.GET)
-	public int plus(int number1, int number2) {
+	@RequestMapping(value = "/result", method = RequestMethod.GET)
+	public int addition(int number1, int number2) {
 
 		try {
 			return number1 + number2;
@@ -33,8 +28,8 @@ public class Helloworls {
 		} return 0;
 	}
 
-	@RequestMapping(value = "/minus", method = RequestMethod.GET)
-	public int minus(int number1, int number2) {
+	@RequestMapping(value = "/result", method = RequestMethod.GET)
+	public int substruct(int number1, int number2) {
 
 		try {
 			return number1 - number2;
@@ -51,8 +46,8 @@ public class Helloworls {
 		} return 0;
 	}
 
-	@RequestMapping(value = "/into", method = RequestMethod.GET)
-	public int into(int number1, int number2) {
+	@RequestMapping(value = "/result", method = RequestMethod.GET)
+	public int multiplication(int number1, int number2) {
 
 		try {
 			return number1 * number2;
@@ -70,8 +65,8 @@ public class Helloworls {
 	}
 
 
-	@RequestMapping(value = "/divided", method = RequestMethod.GET)
-	public int divided(int number1, int number2) {
+	@RequestMapping(value = "/result", method = RequestMethod.GET)
+	public int division(int number1, int number2) {
 
 		try {
 			return number1 / number2;
