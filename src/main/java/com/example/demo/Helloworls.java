@@ -21,7 +21,7 @@ public class Helloworls {
 		}
 
 	@RequestMapping(value = "/add", method = RequestMethod.GET)
-	public int addition(int number1, int number2) {
+	public int add(int number1, int number2) {
 
 		try {
 			return number1 + number2;
@@ -39,7 +39,7 @@ public class Helloworls {
 	}
 
 	@RequestMapping(value = "/sub", method = RequestMethod.GET)
-	public int substruct(int number1, int number2) {
+	public int sub(int number1, int number2) {
 
 		try {
 			return number1 - number2;
@@ -57,7 +57,7 @@ public class Helloworls {
 	}
 
 	@RequestMapping(value = "/multi", method = RequestMethod.GET)
-	public int multiplication(int number1, int number2) {
+	public int multi(int number1, int number2) {
 
 		try {
 			return number1 * number2;
@@ -76,7 +76,7 @@ public class Helloworls {
 
 
 	@RequestMapping(value = "/div", method = RequestMethod.GET)
-	public int division(int number1, int number2) {
+	public int div(int number1, int number2) {
 
 		try {
 			return number1 / number2;
