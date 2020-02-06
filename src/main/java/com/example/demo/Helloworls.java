@@ -20,7 +20,7 @@ public class Helloworls {
 			return sb.reverse().toString();
 		}
 
-	@RequestMapping(value = "/result", method = RequestMethod.GET)
+	@RequestMapping(value = "/add", method = RequestMethod.GET)
 	public int addition(int number1, int number2) {
 
 		try {
@@ -38,7 +38,7 @@ public class Helloworls {
 		} return 0;
 	}
 
-	@RequestMapping(value = "/result", method = RequestMethod.GET)
+	@RequestMapping(value = "/sub", method = RequestMethod.GET)
 	public int substruct(int number1, int number2) {
 
 		try {
@@ -56,7 +56,7 @@ public class Helloworls {
 		} return 0;
 	}
 
-	@RequestMapping(value = "/result", method = RequestMethod.GET)
+	@RequestMapping(value = "/multi", method = RequestMethod.GET)
 	public int multiplication(int number1, int number2) {
 
 		try {
@@ -75,7 +75,7 @@ public class Helloworls {
 	}
 
 
-	@RequestMapping(value = "/result", method = RequestMethod.GET)
+	@RequestMapping(value = "/div", method = RequestMethod.GET)
 	public int division(int number1, int number2) {
 
 		try {
