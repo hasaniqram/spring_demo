@@ -93,3 +93,5 @@ public class Helloworls {
 		} return 0;
 	}
 }
+
+//GET Method= path?number1=value1&number1=value2
